@@ -78,25 +78,33 @@ img {
   z-index: 10;
 }
 
+.section-header .container-fluid {
+  display: flex;
+}
+
 .logo {
   display: inline-block;
   width: 20%;
 }
 
 .main-menu {
-  display: inline-block;
+  float: right;
   text-align: right;
   width: 79.5%;
   font-size: 13px;
 }
 
 .main-menu ul {
-  display: inline-block;
+  display: block;
   list-style: none;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .main-menu li {
@@ -110,11 +118,27 @@ img {
   font-family: 'Montserrat';
   margin: 10px;
   letter-spacing: 0.05em;
+  border-bottom: 1px solid transparent;
 }
 
-.main-menu a:hover,
-.main-menu li.active a {
-  color: #f35828;
+.main-menu a:before {
+  background-color: transparent;
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 10px;
+  position: absolute;
+  right: 10px;
+  -webkit-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.main-menu a:hover:before,
+.main-menu li.active a:before {
+  background-color: #f35828;
 }
 
 .button-auctions a {
@@ -123,6 +147,10 @@ img {
   padding: 10px;
   margin: 0;
   display: block;
+}
+
+.button-auctions a:before {
+  display: none;
 }
 
 .button-auctions a:hover,
@@ -157,6 +185,9 @@ img {
   /* start: Header CSS */
   .logo {
     width: 200px;
+  }
+  .section-header .container-fluid {
+    display: block
   }
   .navbar-toggle {
     display: block;
@@ -369,6 +400,13 @@ img {
     padding-bottom: 15px;
     margin-bottom: 15px;
     border-bottom: 1px solid #ffffff;
+  }
+  .main-menu a:before {
+    display: none;
+  }
+  .main-menu a:hover,
+  .main-menu .active a {
+    color: #f35828
   }
   .button-auctions {
     margin-top: 5px;
