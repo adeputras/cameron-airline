@@ -393,6 +393,10 @@ img {
   }
   .main-menu ul {
     display: block;
+    top: auto;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
   }
   .main-menu ul li {
     display: block;
