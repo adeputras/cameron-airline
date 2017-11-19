@@ -279,7 +279,7 @@ form textarea {
   transition: opacity 1s;
 }
 
-.slick-active .slider-caption {
+.main-slider .slick-active .slider-caption {
   opacity: 1;
   transition-delay: 1s;
   visibility: visible;
@@ -1095,18 +1095,26 @@ form textarea {
 }
 
 @media (max-width: 767px) {
-    .contact-info-bars
-   {
-        display: block;
-        margin: 0 -15px;
+  .slider-caption {
+    -webkit-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
   }
-  .contact-info-bars li{
-    display:block;
-    width:100%;
+  .main-slider .slick-active .slider-caption {
+    transition-delay: .5s;
+  }
+  .contact-info-bars {
+    display: block;
+    margin: 0 -15px;
+  }
+  .contact-info-bars li {
+    display: block;
+    width: 100%;
     padding: 10px 15px;
-        font-size: 13px;
+    font-size: 14px;
   }
-  .contact-info-bars i{
+  .contact-info-bars i {
     width: 35px;
     text-align: center;
   }
