@@ -24,6 +24,7 @@
           breakpoint: 768,
           settings: {
             fade: false,
+            speed: 300,
           }
         }
       ]
