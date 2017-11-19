@@ -25,6 +25,7 @@
           settings: {
             fade: false,
             speed: 300,
+            cssEase: 'ease'
           }
         }
       ]
