@@ -26,11 +26,19 @@
       var winHeight = $(window).height();
       var headerHeight = $('.section-header').outerHeight();
       var contactInfo = $('.contact-info').outerHeight();
+      var contactMobile = $('.contact-info').outerHeight() / 3 ;
       var sliderHeight = winHeight - contactInfo - headerHeight;
-
+      var mobileHeight = winHeight - contactMobile - headerHeight;
+      if ($(window).width() > 767) {
+      
       $('.main-slider .slick-track').css({
         height: sliderHeight
       });
+    }else{
+        $('.main-slider .slick-track').css({
+          height: mobileHeight
+        });
+    }
     }
     sliderHeight();
     
