@@ -1104,6 +1104,7 @@ form textarea {
     display:block;
     width:100%;
     padding: 10px 15px;
+        font-size: 13px;
   }
   .contact-info-bars i{
     width: 35px;
