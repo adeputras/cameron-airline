@@ -336,6 +336,7 @@ form textarea {
   text-align: left;
   font-family: 'Montserrat';
   letter-spacing: 0.05em;
+  color: #ffffff;
 }
 
 .contact-info-bars li:nth-child(2n+1) {
