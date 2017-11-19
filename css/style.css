@@ -1096,13 +1096,13 @@ form textarea {
 
 @media (max-width: 767px) {
   .slider-caption {
-    -webkit-transition: opacity .5s;
-    -ms-transition: opacity .5s;
-    -o-transition: opacity .5s;
-    transition: opacity .5s;
+    -webkit-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
   }
   .main-slider .slick-active .slider-caption {
-    transition-delay: .5s;
+    transition-delay: .3s;
   }
   .contact-info-bars {
     display: block;
