@@ -792,7 +792,7 @@ form textarea {
   .footer-newsletter form {
     font-size: 12px;
   }
-  .footer-newsletter input {
+  .footer-newsletter input,.footer-newsletter button {
     height: 40px;
   }
   .footer-link {
