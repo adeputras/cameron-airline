@@ -188,7 +188,7 @@
         {
           breakpoint: 481,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
           }
         }
       ]
