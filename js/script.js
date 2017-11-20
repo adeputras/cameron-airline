@@ -17,16 +17,18 @@
       pauseOnHover: false,
       // autoplay: true,
       speed: 1000,
-      fade: true,
-      cssEase: 'linear',
-      responsive: [{
-        breakpoint: 768,
-        settings: {
-          fade: false,
-          speed: 300,
-          cssEase: 'ease',
+        fade: true,
+        cssEase: 'linear',
+        responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            fade: false,
+            speed: 300,
+            cssEase: 'ease',
+          }
         }
-      }]
+      ]
     });
 
     //Main Slider height
@@ -34,27 +36,27 @@
       var winHeight = $(window).height();
       var headerHeight = $('.section-header').outerHeight();
       var contactInfo = $('.contact-info').outerHeight();
-      var contactMobile = $('.contact-info').outerHeight() / 3;
+      var contactMobile = $('.contact-info').outerHeight() / 3 ;
       var sliderHeight = winHeight - contactInfo - headerHeight;
       var mobileHeight = winHeight - contactMobile - headerHeight;
       if ($(window).width() > 767) {
-
-        $('.main-slider .slick-track').css({
-          height: sliderHeight
-        });
-      } else {
+      
+      $('.main-slider .slick-track').css({
+        height: sliderHeight
+      });
+    }else{
         $('.main-slider .slick-track').css({
           height: mobileHeight
         });
-      }
+    }
     }
     sliderHeight();
-
+    
     //Window Resize
     $(window).resize(function () {
       mainTop();
       sliderHeight();
-
+  
     });
 
     //Menu Mobile
@@ -154,22 +156,22 @@
       });
 
     }
-
+    
     if ($('.home,.team').length > 0) {
       //Section Award Parallax Image
-      // function parallax() {
-      //   var offset = $('.section-award').offset();
-      //   var imgPlx = $('.parallax-image').height() / 2 * 3;
-      //   var scrollPosition = $(window).scrollTop() - offset.top + imgPlx;
+      function parallax() {
+        var offset = $('.section-award').offset();
+        var imgPlx = $('.parallax-image').height() / 2 * 3;
+        var scrollPosition = $(window).scrollTop() - offset.top + imgPlx;
 
-      //   $('.parallax-image').css('top', (0 - (scrollPosition * .22)) + 'px')
-      // }
-      // $(window).bind('scroll', function (e) {
-      //   parallax();
-      // });
+        $('.parallax-image').css('top', (0 - (scrollPosition * .22)) + 'px')
+      }
+      $(window).bind('scroll', function (e) {
+        parallax();
+      });
     }
 
-
+    
     //Slick Slider Community Slider
     $('.community-slider').slick({
       infinite: true,

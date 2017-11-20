@@ -815,6 +815,9 @@ form textarea {
   h2 {
     font-size: 30px;
   }
+  h3 {
+    font-size: 26px;
+  }
   /* start: Header CSS */
   .logo {
     width: 200px;
@@ -1184,6 +1187,9 @@ form textarea {
     font-size: 26px;
     line-height: 20px;
   }
+  h3 {
+    font-size: 20px;
+  }
   h4 {
     font-size: 16px;
   }
@@ -1238,5 +1244,15 @@ form textarea {
   /* Section Intro */
   .intro-image img {
     max-width: none;
+  }
+  /* Section Awward */
+  .section-award .container img {
+    max-width: 150px;
+  }
+  .section-award h3 {
+    margin-top: 0;
+  }
+  .section-award .button a {
+    font-size: 10px;
   }
 }
