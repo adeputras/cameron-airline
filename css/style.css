@@ -103,7 +103,8 @@ h4 {
   display: inline-block;
 }
 
-.button a {
+.button a,
+.button.active a {
   border: 1px solid #f35828;
   color: #ffffff;
   padding: 10px;
