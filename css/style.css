@@ -1097,7 +1097,7 @@ form textarea {
     max-width: 300px;
   }
   .intro-desc {
-    padding: 15px 0;
+    padding: 15px 0 30px;
   }
   .intro-image {
     width: 300px;
