@@ -1075,6 +1075,26 @@ form textarea {
   .contact-info-bars .mobile-number i {
     font-size: 32px;
   }
+  /* Section Intro */
+  .section-intro .container-fluid {
+    display: block;
+    position: relative;
+  }
+  .intro-image img {
+    top: auto;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    max-width: 300px;
+  }
+  .intro-desc {
+    padding: 0;
+  }
+  .intro-image {
+    width: 300px;
+    height: 300px;
+    float: right;
+  }
   /* Footer */
   .footer-logo img {
     width: 250px;
@@ -1118,11 +1138,22 @@ form textarea {
     display: block;
     width: 100%;
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 13px;
   }
   .contact-info-bars i {
     width: 35px;
     text-align: center;
+  }
+  /* Section Intro */
+  .intro-image {
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 0;
+    text-align: center;
+  }
+  .intro-image img {
+    float: none;
   }
   /* Footer */
   .section-footer {
@@ -1152,6 +1183,12 @@ form textarea {
   h2 {
     font-size: 26px;
     line-height: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 13px;
   }
   /* start: Header CSS */
   .section-header {
@@ -1197,5 +1234,9 @@ form textarea {
     font-size: 20px;
     line-height: 46px;
     padding-left: 5px;
+  }
+  /* Section Intro */
+  .intro-image img {
+    max-width: none;
   }
 }
