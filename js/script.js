@@ -18,7 +18,17 @@
       // autoplay: true,
       speed: 1000,
         fade: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            fade: false,
+            speed: 300,
+            cssEase: 'ease',
+          }
+        }
+      ]
     });
 
     //Main Slider height
