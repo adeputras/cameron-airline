@@ -104,7 +104,7 @@ h4 {
 }
 
 .button a,
-.button.active a {
+.button-auctions a {
   border: 1px solid #f35828;
   color: #ffffff;
   padding: 10px;
