@@ -1124,7 +1124,6 @@ form textarea {
     width: 35px;
     text-align: center;
   }
-
   /* Footer */
   .section-footer {
     padding-top: 15px;
@@ -1183,22 +1182,20 @@ form textarea {
     top: 18px;
   }
   /* end: Header CSS */
-    /* Section Video */
-
-    .tablet-image {
-      width: 100%;
-    }
-    .section-video{
-      padding: 10px 0 0;
-    }
-    .tablet-image a{
-      height: 50px;
-      width:50px;
-    }
-    .tablet-image a i {
-
-      font-size: 20px;
-      line-height: 46px;
-      padding-left: 5px;
-    }
+  /* Section Video */
+  .tablet-image {
+    width: 100%;
+  }
+  .section-video {
+    padding: 10px 0 0;
+  }
+  .tablet-image a {
+    height: 50px;
+    width: 50px;
+  }
+  .tablet-image a i {
+    font-size: 20px;
+    line-height: 46px;
+    padding-left: 5px;
+  }
 }
