@@ -135,6 +135,10 @@ h4 {
   color: #acacac;
 }
 
+form {
+  font-size: 13px;
+}
+
 form button {
   background-color: transparent;
   border: 2px solid #f1592a;
@@ -654,7 +658,6 @@ form textarea {
 
 .footer-newsletter form {
   display: flex;
-  font-size: 13px;
 }
 
 .footer-newsletter input {
@@ -778,6 +781,11 @@ form textarea {
 }
 
 @media (max-width: 1199px) {
+  /* General */
+  form {
+    font-size: 12px;
+  }
+  /* Main Menu */
   .main-menu {
     font-size: 10px;
   }
@@ -788,9 +796,6 @@ form textarea {
   }
   .footer-newsletter {
     padding: 0 15px;
-  }
-  .footer-newsletter form {
-    font-size: 12px;
   }
   .footer-newsletter input,
   .footer-newsletter button {
@@ -1098,6 +1103,10 @@ form textarea {
     height: 300px;
     float: right;
   }
+  /* Section Award */
+  .form-wrapper {
+    max-width: 360px;
+  }
   /* Footer */
   .footer-logo img {
     width: 250px;
@@ -1245,7 +1254,7 @@ form textarea {
   .intro-image img {
     max-width: none;
   }
-  /* Section Award */
+  /* Section Awward */
   .section-award .container img {
     max-width: 150px;
   }

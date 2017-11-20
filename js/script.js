@@ -176,9 +176,22 @@
       slidesToShow: 5,
       slidesToScroll: 1,
       prevArrow: "<button type='button' class='slick-prev arrow-left'><i class='fa fa-angle-left'></i></button>",
-      nextArrow: "<button type='button' class='slick-next arrow-right'><i class='fa fa-angle-right'></i></button>"
-      //pauseOnHover: false,
-      //autoplay: true
+      nextArrow: "<button type='button' class='slick-next arrow-right'><i class='fa fa-angle-right'></i></button>",
+      pauseOnHover: false,
+      autoplay: true,
+      responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 481,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     });
 
 
