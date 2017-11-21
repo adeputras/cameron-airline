@@ -675,7 +675,7 @@ form textarea {
 }
 
 .testimonial-text:before {
-  background: url(../images/quote-icon-before.png)no-repeat;
+  background: url(../images/quote-icon-before.svg)no-repeat;
   background-size: contain;
   content: "";
   position: absolute;
@@ -686,7 +686,7 @@ form textarea {
 }
 
 .testimonial-text:after {
-  background: url(../images/quote-icon-after.png)no-repeat;
+  background: url(../images/quote-icon-after.svg)no-repeat;
   background-size: contain;
   content: "";
   position: absolute;
@@ -712,6 +712,34 @@ form textarea {
 .testimonial-text h4 {
   text-transform: none;
   margin-top: 30px;
+}
+
+
+/* Blog Title */
+
+.blog-title {
+  height: 375px;
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+}
+
+.blog-title h1 {
+  margin: 0;
+  padding: 0 15px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.background-title {
+  background-size: cover!important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 
@@ -873,15 +901,17 @@ form textarea {
   .testimonial-slider .arrow-right {
     right: 10%;
   }
-  /* .testimonial-text:before {
-    width: 70px;
-    height: 70px;
+  .testimonial-text:before {
+    width: 50px;
+    height: 50px;
   }
-
   .testimonial-text:after {
-    width: 70px;
-    height: 70px;
-  } */
+    width: 50px;
+    height: 50px;
+  }
+  .blog-title {
+    height: 500px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -892,6 +922,10 @@ form textarea {
   /* Main Menu */
   .main-menu {
     font-size: 10px;
+  }
+  /* Blog Title */
+  .blog-title {
+    height: 270px;
   }
   /* Footer */
   .section-footer h5 {
@@ -1211,12 +1245,20 @@ form textarea {
   .form-wrapper {
     max-width: 360px;
   }
+  /* Blog Title */
+  .blog-title {
+    height: 200px;
+  }
+  /* Section Community */
+  .section-community {
+    padding: 30px 0;
+  }
   /* Footer */
   .footer-logo img {
     width: 250px;
   }
   .section-footer {
-    padding-top: 30px;
+    padding-top: 20px;
   }
   .footer-logo {
     text-align: center;
@@ -1288,6 +1330,10 @@ form textarea {
   }
   .intro-image img {
     float: none;
+  }
+  /* Blog Title */
+  .blog-title h1 {
+    font-size: 34px;
   }
   /* Footer */
   .section-footer {
@@ -1385,5 +1431,12 @@ form textarea {
   }
   .section-award .button a {
     font-size: 10px;
+  }
+  /* Blog Title */
+  .blog-title {
+    height: 150px;
+  }
+  .blog-title h1 {
+    font-size: 30px;
   }
 }
