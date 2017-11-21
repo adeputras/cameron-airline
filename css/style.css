@@ -168,6 +168,41 @@ form textarea {
 }
 
 
+/* General Slick Arrow */
+
+.slick-list,
+.slick-track {
+  height: 100%;
+}
+
+.slick-arrow {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.slick-arrow i {
+  font-size: 50px;
+  vertical-align: middle;
+  color: #2d313a;
+}
+
+.slick-arrow:hover i {
+  color: #4dc6db;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+.arrow-left {
+  left: 0;
+}
+
+
 /* start: Header CSS */
 
 .section-header {
@@ -603,33 +638,57 @@ form textarea {
   margin: auto;
 }
 
-.community-slider .slick-arrow {
-  background: transparent;
-  border: none;
+
+/* Section Testimonial */
+
+.testimonial-slider .slick-arrow i {
+  color: #ffffff;
+}
+
+.testimonial-slider .arrow-left {
+  padding-left: 15px;
+}
+
+.testimonial-slider .arrow-right {
+  padding-right: 15px;
+}
+
+.testimonial-img {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-size: cover!important;
+  z-index: -1;
 }
 
-.community-slider .slick-arrow i {
-  font-size: 50px;
-  vertical-align: middle;
-  color: #2d313a;
+.testimonial-text {
+  color: #ffffff;
+  max-width: 1040px;
+  text-align: center;
+  padding: 0 65px;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.testimonial-text.full{
+  padding: 20px;
+  top: auto;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
 }
 
-.community-slider .slick-arrow:hover i {
-  color: #4dc6db;
+.testimonial-text h2{
+  margin-bottom: 30px;
+  margin-top: 0;
 }
-
-.arrow-right {
-  right: 0;
+.testimonial-text h4{
+  text-transform: none;
+  margin-top: 30px;
 }
-
-.arrow-left {
-  left: 0;
-}
-
 
 /* Footer */
 
@@ -773,12 +832,22 @@ form textarea {
   }
   .footer-newsletter form,
   .footer-link a,
-  .section-footer h5 {
+    .section-footer h5,
+  .testimonial-text {
     font-size: 15px;
   }
   h1 {
     font-size: 75px;
   }
+.contact-info-bars li{
+  padding: 20px;
+}
+  .testimonial-slider .arrow-left{
+    left: 10%;
+  }
+    .testimonial-slider .arrow-right {
+      right: 10%;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -1132,6 +1201,12 @@ form textarea {
 }
 
 @media (max-width: 767px) {
+  .testimonial-text p{
+    padding: 0 30px;
+  }
+  .testimonial-text{
+    padding: 0 20px;
+  }
   /* Main Slider */
   .slider-caption {
     -webkit-transition: opacity .5s;

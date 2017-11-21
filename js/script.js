@@ -28,7 +28,24 @@
         }
       }]
     });
-
+    //Slick Slider Testimonial Slider
+        $('.testimonial-slider').slick({
+          pauseOnHover: false,
+          // autoplay: true,
+          speed: 1000,
+          fade: true,
+          cssEase: 'linear',
+          prevArrow: "<button type='button' class='slick-prev arrow-left'><i class='fa fa-angle-left'></i></button>",
+            nextArrow: "<button type='button' class='slick-next arrow-right'><i class='fa fa-angle-right'></i></button>",
+          responsive: [{
+            breakpoint: 768,
+            settings: {
+              fade: false,
+              speed: 300,
+              cssEase: 'ease',
+            }
+          }]
+        });
     //Main Slider height
     function sliderHeight() {
       var winHeight = $(window).height();
@@ -39,21 +56,49 @@
       var mobileHeight = winHeight - contactMobile - headerHeight;
       if ($(window).width() > 767) {
 
-        $('.main-slider .slick-track').css({
+        $('.main-slider').css({
           height: sliderHeight
         });
       } else {
-        $('.main-slider .slick-track').css({
+        $('.main-slider').css({
           height: mobileHeight
         });
       }
     }
     sliderHeight();
-
+    function testiHeight(){
+      var winHeight = $(window).height();
+      var headerHeight = $('.section-header').outerHeight();
+      var contactInfo = $('.contact-info').outerHeight();
+      var contactMobile = $('.contact-info').outerHeight() / 3;
+      var sliderHeight = winHeight - contactInfo - headerHeight;
+      var mobileHeight = winHeight - contactMobile - headerHeight;
+      var textHeight = $('.testimonial-text').innerHeight();
+      console.log(textHeight);
+      if ($(window).width() > 767) {
+        $('.testimonial-slider').css({
+          height: sliderHeight
+        });
+        $('.testimonial-text').removeClass('full');
+      } else if (textHeight > sliderHeight) {
+        $('.testimonial-slider').css({
+          height: "auto",
+          
+        });
+        $('.testimonial-text').addClass('full');
+      }else{
+        $('.testimonial-slider').css({
+          height: mobileHeight
+        });
+        $('.testimonial-text').removeClass('full');
+      }
+    }
+    testiHeight();
     //Window Resize
     $(window).resize(function () {
       mainTop();
       sliderHeight();
+      testiHeight();
 
     });
 
