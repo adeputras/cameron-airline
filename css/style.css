@@ -539,15 +539,16 @@ form textarea {
 }
 
 
-/* Section Award */
+/* Section Parallax */
 
-.section-award {
+.section-parallax {
   position: relative;
   text-align: center;
   color: #ffffff;
+  overflow: hidden;
 }
 
-.section-award .parallax-image {
+.section-parallax .parallax-image {
   position: absolute;
   width: 100%;
   height: 200%;
@@ -555,27 +556,29 @@ form textarea {
   background-size: cover!important;
 }
 
-.section-award .button {
+.section-parallax .button {
   display: block;
   margin-top: 30px;
 }
 
-.section-award .button a {
+.section-parallax .button a {
   border-color: #4dc6db;
 }
 
-.section-award .button a:hover {
+.section-parallax .button a:hover {
   border-color: #f1592a;
 }
 
-.section-award .container {
+.section-parallax .container {
   padding: 30px 0;
 }
 
-.section-award .container img {
+.section-parallax .container img {
   max-width: 220px;
 }
-
+.community .section-parallax{
+  height: 480px;
+}
 
 /* Section Form */
 
@@ -912,6 +915,9 @@ form textarea {
   .blog-title {
     height: 500px;
   }
+  .community .section-parallax {
+    height: 700px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -926,6 +932,10 @@ form textarea {
   /* Blog Title */
   .blog-title {
     height: 270px;
+  }
+  /* Section Parallax */
+  .community .section-parallax {
+    height: 400px;
   }
   /* Footer */
   .section-footer h5 {
@@ -1189,7 +1199,8 @@ form textarea {
   }
   .main-menu a:hover,
   .main-menu .active a {
-    color: #f35828
+    color: #f35828;
+    border-color: #f35828;
   }
   .button-auctions {
     margin-top: 5px;
@@ -1202,8 +1213,7 @@ form textarea {
   .main-menu a {
     font-size: 13px;
     margin: 0;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
+    padding: 15px 0;
     border-bottom: 1px solid #ffffff;
   }
   /* end: Header CSS */
@@ -1244,10 +1254,15 @@ form textarea {
     height: 300px;
     float: right;
   }
-  /* Section Award */
+  /* Section Parallax */
   .form-wrapper {
     max-width: 360px;
   }
+
+
+    .community .section-parallax {
+      height: 320px;
+    }
   /* Blog Title */
   .blog-title {
     height: 200px;
@@ -1338,6 +1353,7 @@ form textarea {
   .blog-title h1 {
     font-size: 34px;
   }
+
   /* Footer */
   .section-footer {
     padding-top: 15px;
@@ -1421,14 +1437,14 @@ form textarea {
   .intro-image img {
     max-width: none;
   }
-  /* Section Awward */
-  .section-award .container img {
+  /* Section Parallax */
+  .section-parallax .container img {
     max-width: 150px;
   }
-  .section-award h3 {
+  .section-parallax h3 {
     margin-top: 0;
   }
-  .section-award .button a {
+  .section-parallax .button a {
     font-size: 10px;
   }
   /* Blog Title */

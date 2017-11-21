@@ -77,7 +77,6 @@
       var sliderHeight = winHeight - contactInfo - headerHeight;
       var mobileHeight = winHeight - contactMobile - headerHeight;
       var textHeight = $('.testimonial-text').outerHeight();
-      console.log(textHeight);
       if ($(window).width() > 767) {
         $('.testimonial-slider').css({
           height: sliderHeight
@@ -203,10 +202,10 @@
 
     }
 
-    if ($('.home,.team').length > 0) {
-      //Section Award Parallax Image
+    if ($('.home,.team,.community').length > 0) {
+      //Section Parallax Image
       function parallax() {
-        var offset = $('.section-award').offset();
+        var offset = $('.section-parallax').offset();
         var imgPlx = $('.parallax-image').height() / 2 * 3;
         var scrollPosition = $(window).scrollTop() - offset.top + imgPlx;
 
