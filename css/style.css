@@ -673,22 +673,25 @@ form textarea {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.testimonial-text.full{
+
+.testimonial-text.full {
   padding: 20px;
   top: auto;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
 }
 
-.testimonial-text h2{
+.testimonial-text h2 {
   margin-bottom: 30px;
   margin-top: 0;
 }
-.testimonial-text h4{
+
+.testimonial-text h4 {
   text-transform: none;
   margin-top: 30px;
 }
+
 
 /* Footer */
 
@@ -832,22 +835,22 @@ form textarea {
   }
   .footer-newsletter form,
   .footer-link a,
-    .section-footer h5,
+  .section-footer h5,
   .testimonial-text {
     font-size: 15px;
   }
   h1 {
     font-size: 75px;
   }
-.contact-info-bars li{
-  padding: 20px;
-}
-  .testimonial-slider .arrow-left{
+  .contact-info-bars li {
+    padding: 20px;
+  }
+  .testimonial-slider .arrow-left {
     left: 10%;
   }
-    .testimonial-slider .arrow-right {
-      right: 10%;
-    }
+  .testimonial-slider .arrow-right {
+    right: 10%;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -1201,10 +1204,10 @@ form textarea {
 }
 
 @media (max-width: 767px) {
-  .testimonial-text p{
+  .testimonial-text p {
     padding: 0 30px;
   }
-  .testimonial-text{
+  .testimonial-text {
     padding: 0 20px;
   }
   /* Main Slider */
@@ -1270,7 +1273,7 @@ form textarea {
   }
   h2 {
     font-size: 26px;
-    line-height: 20px;
+    line-height: 1;
   }
   h3 {
     font-size: 20px;
