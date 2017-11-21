@@ -674,6 +674,28 @@ form textarea {
   transform: translateY(-50%);
 }
 
+.testimonial-text:before {
+  background: url(../images/quote-icon-before.png)no-repeat;
+  background-size: contain;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+}
+
+.testimonial-text:after {
+  background: url(../images/quote-icon-after.png)no-repeat;
+  background-size: contain;
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+}
+
 .testimonial-text.full {
   padding: 20px;
   top: auto;
@@ -851,6 +873,15 @@ form textarea {
   .testimonial-slider .arrow-right {
     right: 10%;
   }
+  /* .testimonial-text:before {
+    width: 70px;
+    height: 70px;
+  }
+
+  .testimonial-text:after {
+    width: 70px;
+    height: 70px;
+  } */
 }
 
 @media (max-width: 1199px) {
@@ -1204,6 +1235,18 @@ form textarea {
 }
 
 @media (max-width: 767px) {
+  .testimonial-text:before {
+    top: 15%;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+  }
+  .testimonial-text:after {
+    bottom: 40px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+  }
   .testimonial-text p {
     padding: 0 30px;
   }
