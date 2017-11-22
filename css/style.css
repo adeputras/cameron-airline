@@ -1502,6 +1502,9 @@ form textarea {
     right: 6px;
     top: 10px;
   }
+  .team-desc a:hover {
+    opacity: 1;
+  }
   .team-list:nth-child(odd) {
     padding-right: 30px;
   }
@@ -1748,6 +1751,7 @@ form textarea {
   }
   .mobile-phone,
   .email{
-    display: block;
+       display: block;
+       width: 100%;
   }
 }
