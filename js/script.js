@@ -111,6 +111,28 @@
     }
     captionHeight();*/
 
+
+    //Blog Team Reveal
+    function teamReveal(){
+      $('.team-list a').each(function () {
+        var root = $(this).parents('.team-list');
+        $(this).on('click', function (e) {
+         e.preventDefault();
+         $(this).toggleClass('reveal');
+          $('.detail-desc', root).fadeToggle();
+
+        });
+      });
+    }
+    // $('#team-carousel li a').each(function () {
+    //   var root = $(this).parents('.ceo-pict');
+    //   $(this).hover(function () {
+    //     $('.green-line', root).addClass('show');
+    //   }, function () {
+    //     $('.green-line', root).removeClass('show');
+    //   });
+    // }); 
+    teamReveal();
     //Window Resize
     $(window).resize(function () {
       mainTop();
