@@ -96,12 +96,27 @@
     }
     testiHeight();
 
+    //Blog Caption Height
+    /*function captionHeight(){
+      var maxHeight = 0;
+      $('.blog-caption').each(function () {
+        // if ($('a',this).outerHeight() > maxHeight) {
+        //   maxHeight = $('a', this).outerHeight();
+        // }
+      });
+      // $('.blog-caption a').css({
+      //   height: maxHeight,
+      // });
+      // console.log(maxHeight);
+    }
+    captionHeight();*/
+
     //Window Resize
     $(window).resize(function () {
       mainTop();
       sliderHeight();
       testiHeight();
-
+      //captionHeight();
     });
 
     //Menu Mobile

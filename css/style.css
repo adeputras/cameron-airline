@@ -576,9 +576,11 @@ form textarea {
 .section-parallax .container img {
   max-width: 220px;
 }
-.community .section-parallax{
+
+.community .section-parallax {
   height: 480px;
 }
+
 
 /* Section Form */
 
@@ -743,6 +745,62 @@ form textarea {
   height: 100%;
   position: absolute;
   z-index: -1;
+}
+
+
+/* Blog List */
+
+.blog-list {
+  background-color: #464a58;
+  padding: 30px 0;
+}
+
+.blog-list h2 {
+      font-size: 32px;
+  line-height: normal;
+  text-align: left;
+}
+
+.blog-list h2 img {
+  display: inline-block;
+  vertical-align: text-top;
+  max-width: 200px;
+}
+
+.blog-list h2:after {
+  display: none
+}
+
+.blog-caption {
+  padding: 15px;
+}
+
+.blog-caption:nth-child(even) {
+  padding-left: 40px;
+}
+
+.blog-caption:nth-child(odd) {
+  padding-right: 40px;
+  clear: left;
+}
+
+.blog-caption h3 {
+  color: #4dc6db;
+  font-size: 28px;
+}
+
+.blog-caption a {
+  color: #ffffff;
+  display: block;
+  -ms-transform: (1, 1);
+  -webkit-transform: (1, 1);
+  transform: scale(1, 1);
+}
+
+.blog-caption a:hover {
+  -ms-transform: (1.02, 1.02);
+  -webkit-transform: (1.02, 1.02);
+  transform: scale(1.02, 1.02);
 }
 
 
@@ -985,11 +1043,11 @@ form textarea {
     border-radius: 0;
   }
   .burger-wrapper {
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     top: 0;
-     left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
   .burger {
     height: 40px;
@@ -1258,15 +1316,34 @@ form textarea {
   .form-wrapper {
     max-width: 360px;
   }
-
-
-    .community .section-parallax {
-      height: 320px;
-    }
+  .community .section-parallax {
+    height: 360px;
+  }
   /* Blog Title */
   .blog-title {
     height: 200px;
   }
+  /* Blog List */
+    .blog-list {
+      padding: 15px 0 30px;
+    }
+  .blog-list h2 img {
+    max-width: 120px;
+  }
+  .blog-list h2{
+font-size: 24px;
+  }
+
+  .blog-caption h3 {
+
+    font-size: 22px;
+  }
+  .blog-caption:nth-child(odd) {
+    padding-right: 30px;
+}
+.blog-caption:nth-child(even) {
+  padding-left: 30px;
+}
   /* Section Community */
   .section-community {
     padding: 30px 0;
@@ -1353,7 +1430,20 @@ form textarea {
   .blog-title h1 {
     font-size: 34px;
   }
-
+  /* Blog List */
+  .blog-list h2 br{
+    display: none;
+  }
+  .blog-caption:nth-child(odd),
+  .blog-caption:nth-child(even)
+   {
+    padding: 15px;
+  }
+  .blog-caption a:hover {
+    -ms-transform: (1, 1);
+    -webkit-transform: (1, 1);
+    transform: scale(1, 1);
+  }
   /* Footer */
   .section-footer {
     padding-top: 15px;
@@ -1415,7 +1505,6 @@ form textarea {
     height: 34px;
     width: 34px;
   }
-
   /* end: Header CSS */
   /* Section Video */
   .tablet-image {
@@ -1453,5 +1542,9 @@ form textarea {
   }
   .blog-title h1 {
     font-size: 30px;
+  }
+  /* Blog List */
+  .blog-list {
+    padding-top: 0;
   }
 }
