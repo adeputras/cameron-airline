@@ -1628,6 +1628,9 @@ form textarea {
   .team-list{
     margin-bottom: 0;
   }
+  .intro-desc h4{
+    margin-top: 0;
+  }
   /* Footer */
   .section-footer {
     padding-top: 15px;
