@@ -877,22 +877,19 @@ form textarea {
   font-size: 13px;
   line-height: 24px;
   padding: 0 15px;
-  margin: 0;
-  list-style: none;
 }
-.team-contact li{
-  display: inline-block;
-}
-.team-contact span {
+
+.team-contact em {
+  font-style: normal;
   color: #4dc6db;
   padding-left: 15px;
   padding-right: 5px;
 }
 
-/* .mobile-phone,
+.mobile-phone,
 .email {
   display: inline-block;
-} */
+}
 
 .team-desc a {
   position: absolute;
@@ -1710,9 +1707,6 @@ form textarea {
   .intro-image img {
     max-width: none;
   }
-  .intro-desc h4{
-    margin-top: 0;
-  }
   /* Section Parallax */
   .section-parallax .container img {
     max-width: 150px;
@@ -1752,26 +1746,11 @@ form textarea {
     font-size: 18px;
     line-height: normal;
   }
-  .team-desc > div{
-    width: 100%;
-  }
   .team-contact {
     font-size: 12px;
   }
-  .team-contact{
+  .mobile-phone,
+  .email{
     display: block;
-    text-align: left;
-  }
-    .team-contact li {
-       display: block;
-       width: 100%;
-  }
-  a[x-apple-data-detectors] {
-    color: inherit !important;
-    text-decoration: none !important;
-    font-size: inherit !important;
-    font-family: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
   }
 }
