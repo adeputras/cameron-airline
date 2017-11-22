@@ -877,18 +877,22 @@ form textarea {
   font-size: 13px;
   line-height: 24px;
   padding: 0 15px;
+  margin: 0;
+  list-style: none;
 }
-
+.team-contact li{
+  display: inline-block;
+}
 .team-contact span {
   color: #4dc6db;
   padding-left: 15px;
   padding-right: 5px;
 }
 
-.mobile-phone,
+/* .mobile-phone,
 .email {
   display: inline-block;
-}
+} */
 
 .team-desc a {
   position: absolute;
@@ -1748,8 +1752,7 @@ form textarea {
   .team-contact {
     font-size: 12px;
   }
-  .mobile-phone,
-  .email{
+    .team-contact li {
        display: block;
        width: 100%;
   }
