@@ -1752,8 +1752,14 @@ form textarea {
     font-size: 18px;
     line-height: normal;
   }
+  .team-desc > div{
+    width: 100%;
+  }
   .team-contact {
     font-size: 12px;
+  }
+  .team-contact{
+    display: block;
   }
     .team-contact li {
        display: block;
