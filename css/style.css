@@ -879,8 +879,7 @@ form textarea {
   padding: 0 15px;
 }
 
-.team-contact em {
-  font-style: normal;
+.team-contact span {
   color: #4dc6db;
   padding-left: 15px;
   padding-right: 5px;
