@@ -1746,4 +1746,8 @@ form textarea {
   .team-contact {
     font-size: 12px;
   }
+  .mobile-phone,
+  .email{
+    display: block;
+  }
 }
