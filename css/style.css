@@ -1710,6 +1710,9 @@ form textarea {
   .intro-image img {
     max-width: none;
   }
+  .intro-desc h4{
+    margin-top: 0;
+  }
   /* Section Parallax */
   .section-parallax .container img {
     max-width: 150px;
@@ -1755,5 +1758,6 @@ form textarea {
     .team-contact li {
        display: block;
        width: 100%;
+       float: left;
   }
 }
