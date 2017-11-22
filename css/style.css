@@ -1547,4 +1547,7 @@ font-size: 24px;
   .blog-list {
     padding-top: 0;
   }
+  .blog-list h2 {
+    font-size: 22px;
+  }
 }
