@@ -1760,6 +1760,7 @@ form textarea {
   }
   .team-contact{
     display: block;
+    text-align: left;
   }
     .team-contact li {
        display: block;
