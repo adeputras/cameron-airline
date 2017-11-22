@@ -112,19 +112,19 @@
     captionHeight();*/
 
     //Blog Team Reveal
-    function teamReveal(){
+    function teamReveal() {
       $('.team-list a').each(function () {
         var root = $(this).parents('.team-list');
         $(this).on('click', function (e) {
-         e.preventDefault();
-         $(this).toggleClass('reveal');
+          e.preventDefault();
+          $(this).toggleClass('reveal');
           $('.detail-desc', root).fadeToggle();
 
         });
       });
     }
     teamReveal();
-    
+
     //Window Resize
     $(window).resize(function () {
       mainTop();

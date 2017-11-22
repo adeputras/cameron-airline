@@ -1122,10 +1122,10 @@ form textarea {
     height: 400px;
   }
   /* Section Team */
-  .team-name{
+  .team-name {
     font-size: 26px;
   }
-  .team-position{
+  .team-position {
     font-size: 14px;
   }
   /* Footer */
@@ -1486,34 +1486,34 @@ form textarea {
   .team-position {
     font-size: 13px;
   }
-  .team-contact{
+  .team-contact {
     font-size: 11px;
   }
-  .team-name:before{
+  .team-name:before {
     padding-right: 10px;
   }
-    .team-name:after {
-      padding-left: 10px;
-    }
-    .team-desc a {
-      position: absolute;
-      width: 21px;
-      height: 21px;
-      right: 6px;
-      top: 10px;
-    }
-  .team-list:nth-child(odd){
-        padding-right: 30px;
+  .team-name:after {
+    padding-left: 10px;
+  }
+  .team-desc a {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    right: 6px;
+    top: 10px;
+  }
+  .team-list:nth-child(odd) {
+    padding-right: 30px;
   }
   .team-list:nth-child(even) {
     padding-left: 30px;
   }
-  .team-list:nth-child(odd) .detail-desc{
+  .team-list:nth-child(odd) .detail-desc {
     right: 30px;
   }
-    .team-list:nth-child(even) .detail-desc {
-      left: 30px;
-    }
+  .team-list:nth-child(even) .detail-desc {
+    left: 30px;
+  }
   /* Footer */
   .footer-logo img {
     width: 250px;
@@ -1617,12 +1617,10 @@ form textarea {
   .team-list img {
     width: 100%;
   }
-
-  .detail-desc{
+  .detail-desc {
     position: relative;
     left: auto!important;
     right: auto!important;
-
   }
   /* Footer */
   .section-footer {
@@ -1731,7 +1729,7 @@ form textarea {
     font-size: 22px;
   }
   /* Section Team */
-  .team-list{
+  .team-list {
     padding: 15px!important;
   }
   .team-position {
@@ -1742,7 +1740,7 @@ form textarea {
     padding: 5px 15px;
   }
   .team-name {
-    font-size: 20px;
+    font-size: 18px;
     line-height: normal;
   }
   .team-contact {
