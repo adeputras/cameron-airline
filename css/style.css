@@ -426,11 +426,10 @@ form textarea {
 .tablet-image {
   width: 80%;
   margin: 30px auto;
-  text-align: center;
   position: relative;
 }
 
-.tablet-image a {
+.icon-play {
   border: 3px solid #4dc6db;
   border-radius: 50%;
   position: absolute;
@@ -438,6 +437,7 @@ form textarea {
   left: 0;
   margin: auto;
   right: 0;
+  text-align: center;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -446,7 +446,7 @@ form textarea {
   z-index: 1;
 }
 
-.tablet-image a i {
+.icon-play i {
   color: #4dc6db;
   font-size: 30px;
   line-height: 64px;
@@ -998,6 +998,39 @@ form textarea {
 .section-contact form textarea {
   background-color: transparent;
   border-color: #1f2128;
+}
+
+
+/* Main Video */
+
+.video-background {
+  background-size: cover!important;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Recent Auctions */
+
+.recent-auctions {
+  background-color: #4b4f5c;
+  text-align: center;
+  padding: 30px 0
+}
+
+.recent-link {
+  margin: 0;
+  padding: 30px 0;
+  list-style: none;
+}
+
+.recent-link a {
+  color: #ffffff;
+  line-height: 24px;
+}
+
+.recent-link a:hover {
+  color: #4dc6db;
 }
 
 
@@ -1753,6 +1786,14 @@ form textarea {
     font-size: 22px;
     margin-bottom: 20px;
   }
+  /* Recent Auctions */
+  .recent-link li {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .recent-link {
+    padding: 10px 0 0;
+  }
   /* Footer */
   .section-footer {
     padding-top: 15px;
@@ -1822,11 +1863,11 @@ form textarea {
   .section-video {
     padding: 10px 0 0;
   }
-  .tablet-image a {
+  .icon-play {
     height: 50px;
     width: 50px;
   }
-  .tablet-image a i {
+  .icon-play i {
     font-size: 20px;
     line-height: 46px;
     padding-left: 5px;
@@ -1890,5 +1931,9 @@ form textarea {
   }
   .contact-list h3 {
     font-size: 20px;
+  }
+  /* Recent Auctions */
+  .recent-auctions h2 {
+    margin-top: 0;
   }
 }

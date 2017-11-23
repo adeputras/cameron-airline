@@ -12,10 +12,11 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/font-awesome.min.css" rel="stylesheet" />
   <link href="css/slick.css" rel="stylesheet" />
+  <link href="css/video.popup.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="live-auctions">
   <!-- start: .root -->
   <div class="root">
 
@@ -76,6 +77,15 @@
 
       <!-- start: #main -->
       <main id="main">
+        <!-- start: .main-video -->
+        <div class="main-video">
+          <div class="video-background" style="background: url(images/live-stream-cover.jpg)no-repeat center"></div>
+          <a id="live-auctions" class="icon-play" video-url="https://www.youtube.com/watch?v=-2ULkPxmndY">
+            <i class="fa fa-play"></i>
+          </a>
+        </div>
+        
+        <!-- end: .main-video -->
         <!-- start: .contact-info -->
         <div class="contact-info">
           <div class="container">
@@ -96,6 +106,30 @@
           </div>
         </div>
         <!-- end: .contact-info -->
+
+        <!-- start: .recent-auctions -->
+        <div class="recent-auctions">
+          <div class="container">
+            <h2>Recent Auctions</h2>
+            <ul class="recent-link">
+              <li>
+                <a video-url="https://www.youtube.com/watch?v=SBadZ6vWSoA">28 New Orleans Crescent, Maroubra NSW 2035 - Saturday, 22nd November 2017</a>
+              </li>
+              <li>
+                <a video-url="https://www.youtube.com/watch?v=_MqrP0FQpeY&t=48s">28 New Orleans Crescent, Maroubra NSW 2035 - Saturday, 22nd November 2017</a>
+              </li>
+              <li>
+                <a video-url="https://www.youtube.com/watch?v=SBadZ6vWSoA">28 New Orleans Crescent, Maroubra NSW 2035 - Saturday, 22nd November 2017</a>
+              </li>
+              <li>
+                <a video-url="https://www.youtube.com/watch?v=_MqrP0FQpeY&t=48s">28 New Orleans Crescent, Maroubra NSW 2035 - Saturday, 22nd November 2017</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        <!-- end: .recent-auctions -->
+
         <!-- start: .section-form -->
         <div class="section-form">
           <div class="container">
@@ -206,6 +240,7 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/video.popup.js"></script>
   <script src="js/script.js"></script>
   </body>
   

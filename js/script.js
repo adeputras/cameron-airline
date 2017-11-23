@@ -58,11 +58,11 @@
       var mobileHeight = winHeight - contactMobile - headerHeight;
       if ($(window).width() > 767) {
 
-        $('.main-slider').css({
+        $('.main-slider,.main-video').css({
           height: sliderHeight
         });
       } else {
-        $('.main-slider').css({
+        $('.main-slider,.main-video').css({
           height: mobileHeight
         });
       }
@@ -231,6 +231,24 @@
 
     }
 
+    if ($('.live-auctions').length > 0) {
+      // Live Video Auctions
+      $("#live-auctions").videoPopup({
+        autoplay: 1,
+        controlsColor: 'white',
+        showVideoInformations: 0,
+        width: '100%',
+      });
+      // List Recent Video
+      $(".recent-link a").videoPopup({
+        autoplay: 1,
+        controlsColor: 'white',
+        showVideoInformations: 0,
+        width: '100%',
+      });
+
+    }
+     
     if ($('.home,.team,.community').length > 0) {
       //Section Parallax Image
       function parallax() {
