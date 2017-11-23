@@ -223,6 +223,8 @@ form textarea {
 }
 
 .section-header .container-fluid {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
@@ -373,6 +375,8 @@ form textarea {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   text-align: center;
 }
@@ -493,9 +497,12 @@ form textarea {
 .section-intro {
   background-color: #1f2128;
   color: #ffffff;
+  position: relative;
 }
 
 .section-intro .container-fluid {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
@@ -594,7 +601,7 @@ form textarea {
 
 .section-form {
   background-color: #2d313a;
-  padding: 50px 0;
+  padding: 30px 0 50px;
 }
 
 .form-wrapper {
@@ -603,7 +610,7 @@ form textarea {
 }
 
 .form-ask {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .form-ask button {
@@ -814,6 +821,14 @@ form textarea {
 
 /* Section Team */
 
+.team .intro-image img {
+  max-width: none;
+  max-height: 85%;
+  width: auto;
+  position: absolute;
+  left: 0;
+}
+
 .section-team {
   background-color: #464a58;
   padding: 30px 0;
@@ -930,6 +945,62 @@ form textarea {
 }
 
 
+/* Section Contact */
+
+.section-contact {
+  background-color: #464a58;
+  padding: 30px 0 60px;
+}
+
+.section-contact h2 {
+  margin-bottom: 40px;
+}
+
+.section-contact .form-wrapper {
+  margin: 5px 0 0;
+}
+
+.contact-list img {
+  max-width: 320px;
+  margin-bottom: -10px;
+}
+
+.contact-list .team-contact {
+  background-color: transparent;
+  color: #ffffff;
+  text-align: left;
+  padding: 0;
+}
+
+.contact-list .mobile-phone em {
+  padding-left: 0;
+}
+
+.contact-list .sosmed-link a {
+  margin: 10px 5px 0 0;
+}
+
+.contact-list h3 {
+  margin: 30px 0 0;
+  color: #ffffff;
+  font-family: 'Neutraface 2 Text Book';
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.personal-contact {
+  padding-bottom: 30px;
+}
+
+.section-contact form input,
+.section-contact form textarea {
+  background-color: transparent;
+  border-color: #1f2128;
+}
+
+
 /* Footer */
 
 .section-footer {
@@ -957,6 +1028,8 @@ form textarea {
 }
 
 .footer-newsletter form {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
@@ -1102,6 +1175,10 @@ form textarea {
   .community .section-parallax {
     height: 700px;
   }
+  .team .intro-image img {
+    right: -10%;
+    left: auto;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -1127,6 +1204,22 @@ form textarea {
   }
   .team-position {
     font-size: 14px;
+  }
+  /* Section Contact */
+  .intro-image img {
+    max-width: none;
+    max-height: 85%;
+    width: auto;
+    position: absolute;
+    left: -10%;
+  }
+  .team .intro-image img {
+    left: -10%;
+    max-height: 70%;
+  }
+  .section-contact h2 {
+    line-height: 1;
+    font-size: 26px;
   }
   /* Footer */
   .section-footer h5 {
@@ -1157,7 +1250,7 @@ form textarea {
     font-size: 40px;
   }
   h2 {
-    font-size: 30px;
+    font-size: 28px;
   }
   h3 {
     font-size: 26px;
@@ -1436,6 +1529,16 @@ form textarea {
     -ms-transform: translateY(0);
     transform: translateY(0);
     max-width: 300px;
+    max-height: none;
+    width: 100%;
+    left: auto;
+    position: relative;
+  }
+  .team .intro-image img {
+    max-height: none;
+    width: 100%;
+    left: auto;
+    position: relative;
   }
   .intro-desc {
     padding: 15px 0 30px;
@@ -1445,10 +1548,11 @@ form textarea {
     height: 300px;
     float: right;
   }
-  /* Section Parallax */
+  /* Section Form */
   .form-wrapper {
     max-width: 360px;
   }
+  /* Section Parallax */
   .community .section-parallax {
     height: 360px;
   }
@@ -1516,6 +1620,16 @@ form textarea {
   }
   .team-list:nth-child(even) .detail-desc {
     left: 30px;
+  }
+  /* Section Contact */
+  .contact-list img {
+    max-width: 260px;
+  }
+  .contact-list h3 {
+    font-size: 26px;
+  }
+  .section-contact .form-wrapper {
+    margin: 5px auto 0;
   }
   /* Footer */
   .footer-logo img {
@@ -1625,11 +1739,19 @@ form textarea {
     left: auto!important;
     right: auto!important;
   }
-  .team-list{
+  .team-list {
     margin-bottom: 0;
   }
-  .intro-desc h4{
+  .intro-desc h4 {
     margin-top: 0;
+  }
+  .personal-contact,
+  .contact-list .team-contact {
+    text-align: center;
+  }
+  .section-contact h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
   }
   /* Footer */
   .section-footer {
@@ -1745,18 +1867,28 @@ form textarea {
     font-size: 12px;
   }
   .team-contact {
-    line-height: 16px;
+    line-height: 18px;
     padding: 5px 15px;
+    font-size: 12px;
   }
   .team-name {
     font-size: 18px;
     line-height: normal;
   }
-  .team-contact {
-    font-size: 12px;
-  }
   .mobile-phone,
-  .email{
+  .email {
     display: block;
+  }
+  /* Section Form */
+  .form-wrapper input:first-child,
+  .form-wrapper input:nth-child(2) {
+    width: 49%;
+  }
+  /* Section Contact */
+  .section-contact {
+    padding-bottom: 0 0 30px;
+  }
+  .contact-list h3 {
+    font-size: 20px;
   }
 }
