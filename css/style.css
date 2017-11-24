@@ -198,8 +198,12 @@ form textarea {
   color: #2d313a;
 }
 
+.slick-arrow i:before {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .slick-arrow:hover i {
-  color: #4dc6db;
+  color: #4dc6db!important;
 }
 
 .arrow-right {
@@ -356,10 +360,11 @@ form textarea {
   width: 24%;
 }
 
-.main-slider .slick-slide img {
+.slide-img {
+  background-size: cover!important;
+  position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 
@@ -1034,6 +1039,175 @@ form textarea {
 }
 
 
+/* Properties Title */
+
+.properties-title {
+  background-color: #464a58;
+  text-align: center;
+}
+
+.properties-title h1 {
+  padding: 30px 0;
+  margin: 0;
+  color: #f35828;
+  text-align: center;
+  font-size: 34px;
+  line-height: 24px;
+}
+
+
+/* Properties Slider */
+
+.properties-slider {
+  background-color: #464a58;
+}
+
+.properties-image {
+  background-size: cover!important;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  opacity: .4;
+}
+
+.properties-image.slick-active {
+  opacity: 1;
+}
+
+.properties-slider .slick-arrow i {
+  color: #ffffff;
+}
+
+.properties-slider .arrow-left {
+  padding-left: 15px;
+}
+
+.properties-slider .arrow-right {
+  padding-right: 15px;
+}
+
+.properties-slider .slick-track,
+.properties-slider .slick-list {
+  -webkit-perspective: 2000;
+  -webkit-backface-visibility: hidden;
+}
+
+
+/* Properties Detail */
+
+.properties-detail {
+  background-color: #1f2128;
+  color: #ffffff;
+  padding: 30px 0;
+}
+
+.properties-detail h2:after {
+  display: none;
+}
+
+.properties-detail h2 {
+  text-align: left;
+  line-height: normal;
+  margin: 0;
+}
+
+.detail-heading {
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.detail-title,
+.detail-icon,
+  .detail-text,
+.detail-sidebar {
+  padding: 0;
+}
+
+.icon-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-list li {
+  display: inline-block;
+  font-size: 16px;
+  padding-left: 10px;
+  margin: 5px 0;
+}
+
+.icon-list li img {
+  width: 30px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.detail-text {
+  line-height: 24px;
+}
+.detail-text .button{
+  margin-top: 30px;
+}
+  .detail-content h4 {
+  text-transform: none;
+  font-family: 'Gotham';
+  font-size: 20px;
+}
+
+  .detail-text ul,
+.open-times ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.detail-text li {
+  position: relative;
+  padding-left: 15px;
+}
+
+.detail-text li:before {
+  content: "\2022";
+  color: #4dc6db;
+  left: 0;
+  position: absolute;
+}
+/* Detail Sidebar */
+.detail-status h2{
+  font-size: 34px;
+}
+.detail-sidebar .button{
+  margin-top: 30px;
+}
+.open-times span{
+  float: right;
+}
+.open-times{
+margin-top: 30px;
+}
+  .open-times ul {
+  line-height: 24px;
+  font-size: 13px;
+}
+.open-times li{
+  position: relative;
+  padding-left: 20px;
+}
+.open-times i{
+      position: absolute;
+      left: 2px;
+      line-height: 24px;
+      font-size: 14px;
+}
+
 /* Footer */
 
 .section-footer {
@@ -1254,6 +1428,10 @@ form textarea {
     line-height: 1;
     font-size: 26px;
   }
+  /* Properties Slider */
+  .properties-image {
+    opacity: 1;
+  }
   /* Footer */
   .section-footer h5 {
     font-size: 13px;
@@ -1283,10 +1461,10 @@ form textarea {
     font-size: 40px;
   }
   h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
   h3 {
-    font-size: 26px;
+    font-size: 24px;
   }
   /* start: Header CSS */
   .logo {
@@ -1664,6 +1842,22 @@ form textarea {
   .section-contact .form-wrapper {
     margin: 5px auto 0;
   }
+  /* Properties Individual */
+  .properties-title h1 {
+    font-size: 26px;
+    padding: 20px 0;
+  }
+  /* Detail Sidebar */
+  .open-times span{
+    display: block;
+    float: none;
+  }
+  .open-times li {
+    padding-left: 30px;
+  }
+  .open-times i i{
+    font-size: 16px;
+  }
   /* Footer */
   .footer-logo img {
     width: 250px;
@@ -1794,6 +1988,22 @@ form textarea {
   .recent-link {
     padding: 10px 0 0;
   }
+  /* Properties Individual */
+  .properties-title h1 {
+    padding: 15px 0;
+  }
+  /* Detail Sidebar */
+
+  .detail-sidebar{
+    margin-top: 30px;
+  }
+  .detail-sidebar .button{
+    display: inline-block!important;
+    font-size: 12px;
+  }
+  .detail-sidebar .button:last-child{
+    margin-left: 18px;
+  }
   /* Footer */
   .section-footer {
     padding-top: 15px;
@@ -1820,7 +2030,7 @@ form textarea {
     font-size: 42px;
   }
   h2 {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1;
   }
   h3 {
@@ -1935,5 +2145,10 @@ form textarea {
   /* Recent Auctions */
   .recent-auctions h2 {
     margin-top: 0;
+  }
+  /* Properties Individual */
+  .properties-title h1 {
+    font-size: 24px;
+    line-height: 1;
   }
 }
