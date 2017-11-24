@@ -2259,6 +2259,13 @@ form textarea {
     font-size: 24px;
     line-height: 1;
   }
+  .detail-status p,
+  .open-times ul {
+    font-size: 15px;
+  }
+  .open-times i{
+    font-size: 16px;
+  }
   #map {
     height: 300px;
   }
