@@ -258,6 +258,18 @@
         nextArrow: "<button type='button' class='slick-next arrow-right'><i class='fa fa-angle-right'></i></button>",
         pauseOnHover: false,
         autoplay: true,
+        responsive: [{
+          breakpoint: 1200,
+          settings: {
+            centerMode: false,
+            variableWidth: false,
+          }
+        },
+      ]
+      });
+
+      $('[data-remodal-id=floor-plan]').remodal({
+        hashTracking: false,
       });
     }
 

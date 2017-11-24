@@ -1060,13 +1060,14 @@ form textarea {
 
 .properties-slider {
   background-color: #464a58;
+  width: 100%;
 }
 
 .properties-image {
   background-size: cover!important;
   width: 100%;
   height: 100%;
-  max-width: 1200px;
+  max-width: 1140px;
   opacity: .4;
 }
 
@@ -1120,7 +1121,7 @@ form textarea {
 
 .detail-title,
 .detail-icon,
-  .detail-text,
+.detail-text,
 .detail-sidebar {
   padding: 0;
 }
@@ -1153,16 +1154,18 @@ form textarea {
 .detail-text {
   line-height: 24px;
 }
-.detail-text .button{
+
+.detail-text .button {
   margin-top: 30px;
 }
-  .detail-content h4 {
+
+.detail-content h4 {
   text-transform: none;
   font-family: 'Gotham';
   font-size: 20px;
 }
 
-  .detail-text ul,
+.detail-text ul,
 .open-times ul {
   list-style: none;
   margin: 0;
@@ -1180,33 +1183,132 @@ form textarea {
   left: 0;
   position: absolute;
 }
+
+
 /* Detail Sidebar */
-.detail-status h2{
+
+.detail-status h2 {
   font-size: 34px;
 }
-.detail-sidebar .button{
+
+.detail-sidebar .button {
   margin-top: 30px;
 }
-.open-times span{
+
+.open-times span {
   float: right;
 }
-.open-times{
-margin-top: 30px;
+
+.open-times {
+  margin-top: 30px;
 }
-  .open-times ul {
+
+.open-times ul {
   line-height: 24px;
   font-size: 13px;
 }
-.open-times li{
+
+.open-times li {
   position: relative;
   padding-left: 20px;
 }
-.open-times i{
-      position: absolute;
-      left: 2px;
-      line-height: 24px;
-      font-size: 14px;
+
+.open-times i {
+  position: absolute;
+  left: 2px;
+  line-height: 24px;
+  font-size: 14px;
 }
+
+.detail-navigation {
+  margin-top: 30px;
+}
+
+.detail-navigation a {
+  color: #4dc6db;
+  font-family: 'Gotham';
+  float: left;
+  line-height: 24px;
+}
+
+.detail-navigation a:hover {
+  color: #f35828;
+}
+
+.detail-navigation a:last-child {
+  float: right;
+}
+
+
+/* Remodal */
+
+.remodal {
+  max-width: none;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 95%;
+}
+
+.remodal-overlay {
+  background: #ffffff;
+}
+
+.remodal img {
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.remodal-wrapper {
+  padding: 15px;
+}
+
+.remodal-close {
+  width: 30px;
+  height: 30px;
+  top: 12px;
+  right: 12px;
+  left: auto;
+  -webkit-transition: all linear .2s;
+  transition: all linear .2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  z-index: 1;
+}
+
+.remodal-close:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.remodal-close:before {
+  display: none;
+}
+
+.remodal-close:after {
+  border: 2px solid #4dc6db;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #4dc6db;
+  content: 'X';
+  display: block;
+  font-size: 16px;
+  font-family: 'Verdana';
+  height: 30px;
+  line-height: 25px;
+  text-align: center;
+  width: 30px;
+}
+
 
 /* Footer */
 
@@ -1431,6 +1533,7 @@ margin-top: 30px;
   /* Properties Slider */
   .properties-image {
     opacity: 1;
+    max-width: none;
   }
   /* Footer */
   .section-footer h5 {
@@ -1848,14 +1951,14 @@ margin-top: 30px;
     padding: 20px 0;
   }
   /* Detail Sidebar */
-  .open-times span{
+  .open-times span {
     display: block;
     float: none;
   }
   .open-times li {
     padding-left: 30px;
   }
-  .open-times i i{
+  .open-times i i {
     font-size: 16px;
   }
   /* Footer */
@@ -1993,15 +2096,14 @@ margin-top: 30px;
     padding: 15px 0;
   }
   /* Detail Sidebar */
-
-  .detail-sidebar{
+  .detail-sidebar {
     margin-top: 30px;
   }
-  .detail-sidebar .button{
+  .detail-sidebar .button {
     display: inline-block!important;
     font-size: 12px;
   }
-  .detail-sidebar .button:last-child{
+  .detail-sidebar .button:last-child {
     margin-left: 18px;
   }
   /* Footer */
