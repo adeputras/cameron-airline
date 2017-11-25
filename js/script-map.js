@@ -9,11 +9,16 @@
 			longitude = 151.252846,
 			map_zoom = 18;
 
-		//var bounds = new google.maps.LatLngBounds();
+		var bounds = new google.maps.LatLngBounds();
 
 		//google map custom marker icon - .png fallback for IE11
-		var is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1;
-		var marker_url = (is_internetExplorer11) ? 'images/map-marker.png' : 'images/map-marker.png';
+		// var is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1;
+		// var marker_url = (is_internetExplorer11) ? 'images/map-marker.png' : 'images/map-marker.png';
+		
+		var marker_url = {
+			url: 'images/map-marker.png',		
+			scaledSize: new google.maps.Size(29, 50),
+		}
 
 		//we define here the style of the map
 		var style = [{
@@ -137,8 +142,8 @@
 		var marker = new google.maps.Marker({
 			map: map,
 			position: new google.maps.LatLng(latitude, longitude),
-			icon: marker_url
-
+			icon: marker_url,
+			
 		});
 
 	});
