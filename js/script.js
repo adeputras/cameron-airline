@@ -40,13 +40,14 @@
     });
 
     //Menu Mobile
-    if ('ontouchstart' in window) {
-      var click = 'touchstart';
-    } else {
-      var click = 'click';
-    }
+    // if ('ontouchstart' in window) {
+    //   var click = 'touchstart';
+    // } else {
+    //   var click = 'click';
+    // }
 
-    $('.burger').on(click, function () {
+    $('.burger').on('click', function (e) {
+      e.preventDefault();
       if (!$(this).hasClass('open')) {
         openMenu();
       } else {
