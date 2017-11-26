@@ -4,16 +4,21 @@
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#F15A2B;}
-	.st1{opacity:0.25;}
-	.st2{fill:#FCFCFC;}
-	.st3{font-family:'GothamBold';}
-	.st4{font-size:27px;}
+	.st1{opacity:0.25;clip-path:url(#SVGID_2_);}
+	.st2{enable-background:new    ;}
+	.st3{fill:#FCFCFC;}
 </style>
 <circle class="st0" cx="50.2" cy="50" r="47.5"/>
 <g>
+	<defs>
+		<rect id="SVGID_1_" x="-23.8" y="1.7" width="150.2" height="99.8"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
 	<g class="st1">
 		
-			<image style="overflow:visible;" width="626" height="416" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAGlCAYAAACcIQDmAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
+			<image style="overflow:visible;enable-background:new    ;" width="629" height="421" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAGlCAYAAACcIQDmAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAWfNJREFUeNrsvdmPZEmW3mfH7N7r
 7rHnXntXdc8QpMghQInijAChQQgCX/S/6o2AME+DgR4ECRBAjWZaPezqrMqqyj1WX+9idnSOmV0P
 j6ioDI/MjMzIyu9X5elL+HKvubnZZ8fOYgwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -418,9 +423,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFYSQIABACq/8dV+32iTAAAAAElFTkSuQmCC" transform="matrix(0.24 0 0 0.24 -23.811 1.6895)">
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFYSQIABACq/8dV+32iTAAAAAElFTkSuQmCC" transform="matrix(0.2389 0 0 0.2371 -23.811 1.6895)">
 		</image>
 	</g>
-	<text transform="matrix(1 0 0 1 11.1891 59.6393)" class="st2 st3 st4">SOLD</text>
+</g>
+<g class="st2">
+	<path class="st3" d="M20.2,59.9c-1.4,0-2.9-0.2-4.2-0.7s-2.6-1.3-3.8-2.3l2.5-2.9c0.9,0.7,1.8,1.3,2.7,1.7c0.9,0.4,1.9,0.6,3,0.6
+		c0.9,0,1.5-0.2,2-0.5c0.5-0.3,0.7-0.8,0.7-1.3v-0.1c0-0.3,0-0.5-0.1-0.7c-0.1-0.2-0.3-0.4-0.6-0.6c-0.3-0.2-0.7-0.4-1.2-0.5
+		c-0.5-0.2-1.1-0.4-1.9-0.6c-1-0.2-1.8-0.5-2.6-0.8s-1.4-0.6-2-1.1c-0.5-0.4-1-0.9-1.3-1.6c-0.3-0.6-0.4-1.4-0.4-2.3v-0.1
+		c0-0.9,0.2-1.6,0.5-2.3c0.3-0.7,0.8-1.3,1.4-1.8c0.6-0.5,1.3-0.9,2.1-1.2c0.8-0.3,1.7-0.4,2.7-0.4c1.4,0,2.7,0.2,3.8,0.6
+		c1.2,0.4,2.2,1,3.2,1.8L24.4,46c-0.8-0.6-1.7-1-2.5-1.4s-1.6-0.5-2.4-0.5c-0.8,0-1.4,0.2-1.8,0.5c-0.4,0.3-0.6,0.7-0.6,1.2v0.1
+		c0,0.3,0.1,0.6,0.2,0.8c0.1,0.2,0.3,0.4,0.6,0.6c0.3,0.2,0.7,0.4,1.3,0.5c0.5,0.2,1.2,0.4,2,0.6c1,0.3,1.8,0.5,2.6,0.9
+		c0.7,0.3,1.4,0.7,1.9,1.1c0.5,0.4,0.9,1,1.2,1.6c0.3,0.6,0.4,1.3,0.4,2.1v0.1c0,0.9-0.2,1.8-0.5,2.5c-0.3,0.7-0.8,1.3-1.4,1.8
+		c-0.6,0.5-1.3,0.9-2.2,1.1C22.2,59.8,21.2,59.9,20.2,59.9z"/>
+	<path class="st3" d="M39.9,60c-1.5,0-2.8-0.3-4-0.8c-1.2-0.5-2.3-1.2-3.2-2.1s-1.6-1.9-2.1-3.1s-0.7-2.4-0.7-3.8v-0.1
+		c0-1.4,0.3-2.6,0.8-3.8c0.5-1.2,1.2-2.2,2.1-3.1c0.9-0.9,2-1.6,3.2-2.1c1.2-0.5,2.6-0.8,4-0.8s2.8,0.3,4,0.8
+		c1.2,0.5,2.3,1.2,3.2,2.1c0.9,0.9,1.6,1.9,2.1,3.1c0.5,1.2,0.7,2.4,0.7,3.8v0.1c0,1.4-0.3,2.6-0.8,3.8c-0.5,1.2-1.2,2.2-2.1,3.1
+		c-0.9,0.9-2,1.6-3.2,2.1C42.7,59.7,41.4,60,39.9,60z M40,56.1c0.8,0,1.6-0.2,2.3-0.5c0.7-0.3,1.3-0.7,1.8-1.3s0.9-1.2,1.2-1.9
+		c0.3-0.7,0.4-1.5,0.4-2.3v-0.1c0-0.8-0.1-1.6-0.4-2.3c-0.3-0.7-0.7-1.3-1.2-1.9c-0.5-0.5-1.1-1-1.8-1.3c-0.7-0.3-1.5-0.5-2.3-0.5
+		c-0.8,0-1.6,0.2-2.3,0.5c-0.7,0.3-1.3,0.7-1.8,1.3s-0.9,1.2-1.2,1.9s-0.4,1.5-0.4,2.3v0.1c0,0.8,0.1,1.6,0.4,2.3
+		c0.3,0.7,0.7,1.4,1.2,1.9c0.5,0.5,1.1,1,1.8,1.3C38.4,56,39.1,56.1,40,56.1z"/>
+	<path class="st3" d="M53.7,40.7h4.2v15.1h9.4v3.8H53.7V40.7z"/>
+	<path class="st3" d="M70.4,40.7h7.4c1.5,0,2.8,0.2,4.1,0.7c1.2,0.5,2.3,1.1,3.2,2c0.9,0.8,1.6,1.8,2.1,3c0.5,1.1,0.7,2.4,0.7,3.7
+		v0.1c0,1.3-0.2,2.6-0.7,3.7c-0.5,1.2-1.2,2.2-2.1,3c-0.9,0.8-2,1.5-3.2,2c-1.2,0.5-2.6,0.7-4.1,0.7h-7.4V40.7z M77.8,55.9
+		c0.8,0,1.6-0.1,2.3-0.4c0.7-0.3,1.3-0.7,1.8-1.2c0.5-0.5,0.9-1.1,1.2-1.8c0.3-0.7,0.4-1.4,0.4-2.3v-0.1c0-0.8-0.1-1.6-0.4-2.3
+		c-0.3-0.7-0.7-1.3-1.2-1.8c-0.5-0.5-1.1-0.9-1.8-1.2s-1.5-0.4-2.3-0.4h-3.2v11.4H77.8z"/>
 </g>
 </svg>
