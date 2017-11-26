@@ -297,6 +297,7 @@ form textarea {
   color: #4dc6db;
   float: none;
   margin: 0;
+  text-transform: none;
 }
 
 .button-auctions a:before {
